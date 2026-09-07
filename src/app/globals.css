@@ -1,0 +1,40 @@
+@import "tailwindcss";
+
+:root {
+  --brand-ink: #14213d;       /* deep graphite-indigo — primary actions, nav */
+  --brand-ink-hover: #1d2f57;
+  --brand-teal: #5b5bd6;      /* indigo accent — focus rings, links, highlights */
+  --brand-amber: #b45309;
+  --surface: #f7f7f9;
+}
+
+html, body {
+  background: var(--surface);
+  color: #0f172a;
+}
+
+* {
+  border-color: #e2e8f0;
+}
+
+::selection {
+  background: #5b5bd633;
+}
+
+.matchiq-scrollbar::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+.matchiq-scrollbar::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 999px;
+}
+
+@media print {
+  .no-print {
+    display: none !important;
+  }
+  body {
+    background: white;
+  }
+}
